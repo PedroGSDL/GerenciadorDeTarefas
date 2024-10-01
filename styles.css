@@ -1,0 +1,132 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte utilizada na página */
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Colocar elementos em coluna */
+    align-items: center; /* Centralizar horizontalmente */
+    height: 100vh; /* Altura da página completa */
+    background-color: #2c2c2c; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto em branco */
+    margin: 0; /* Remover margens padrão */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o título */
+h1 {
+    color: #ffffff; /* Cor do título em branco */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Container para os blocos principais */
+.flex-container {
+    display: flex; /* Usar flexbox para layout */
+    justify-content: center; /* Centralizar os blocos */
+    width: 100%; /* Largura total do container */
+}
+
+/* Estilos para o bloco de entrada de tarefas e de exibição de tarefas */
+.container, .task-display {
+    background: #3a3a3a; /* Fundo dos blocos em cinza escuro */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    padding: 20px; /* Espaçamento interno */
+    width: 400px; /* Largura do bloco */
+    margin: 10px; /* Margem entre os blocos */
+}
+
+/* Estilos para campos de entrada e botões */
+input[type="text"], input[type="datetime-local"], button {
+    width: 100%; /* Largura total dos campos e botões */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margens verticais */
+    border: 1px solid #555; /* Borda cinza clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e borda na largura */
+    background-color: #444; /* Fundo dos campos de entrada */
+    color: #ffffff; /* Texto em branco */
+}
+
+/* Estilos gerais para os botões */
+button {
+    cursor: pointer; /* Mudar o cursor ao passar o mouse */
+    background-color: #ff6f91; /* Cor de fundo rosa pastel */
+    border: none; /* Remover borda padrão */
+}
+
+/* Efeito ao passar o mouse nos botões */
+button:hover {
+    background-color: #ff4f73; /* Tom mais escuro de rosa ao passar o mouse */
+}
+
+/* Estilos para a lista de tarefas */
+ul {
+    list-style-type: none; /* Remover marcadores da lista */
+    padding: 0; /* Remover padding padrão */
+}
+
+/* Estilos para cada item da lista de tarefas */
+li {
+    display: flex; /* Usar flexbox para layout dos itens */
+    justify-content: space-between; /* Alinhar conteúdo à esquerda e direita */
+    margin: 5px 0; /* Margem vertical entre itens */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #4a4a4a; /* Fundo dos itens da lista */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+/* Efeito ao passar o mouse sobre os itens da lista */
+li:hover {
+    background-color: #555; /* Cor mais clara ao passar o mouse */
+}
+
+/* Classe para esconder elementos */
+.hidden {
+    display: none; /* Não exibir o elemento */
+}
+
+/* Estilos para mensagens de erro */
+.error {
+    background-color: rgba(255, 0, 0, 0.8); /* Fundo vermelho com opacidade */
+    color: white; /* Texto em branco */
+    text-align: center; /* Centralizar texto */
+    margin-top: 10px; /* Espaço acima */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 400px; /* Largura fixa */
+    margin-bottom: 20px; /* Espaço abaixo */
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para opacidade */
+}
+
+/* Classe para tornar a mensagem de erro visível */
+.error.visible {
+    opacity: 1; /* Fica visível */
+}
+
+/* Estilos para o botão de exclusão */
+.delete-btn {
+    background-color: #dc3545; /* Cor do botão de excluir */
+    border: none; /* Remover borda padrão */
+    cursor: pointer; /* Mudar o cursor ao passar o mouse */
+    color: white; /* Texto em branco */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px 8px; /* Tamanho do botão */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão de exportação */
+.export-btn {
+    width: 100px; /* Largura do botão de exportar */
+    height: 100px; /* Altura do botão de exportar */
+    background-color: #ff6f91; /* Rosa pastel para o botão de exportar */
+    color: white; /* Texto em branco */
+    border: none; /* Remover borda padrão */
+    border-radius: 2px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudar o cursor ao passar o mouse */
+    margin-left: 20px; /* Espaço entre os blocos e o botão */
+    padding: 0; /* Remove o padding */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: center; /* Alinhar horizontalmente */
+}
